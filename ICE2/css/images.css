@@ -1,0 +1,67 @@
+.hover {
+	border: 5px solid black;
+}
+
+.hover:hover {
+	border-radius: 150px;
+}
+
+.active {
+	border: 5px solid black;
+}
+
+.focus {
+	border: 5px solid black;
+}
+
+.focus:focus {
+	filter: grayscale(100%);
+}
+
+img:active {
+	opacity: 0.5;
+}
+
+.bar {
+	height: 50px;
+	margin-top: 50px;
+	background: gray;
+}
+
+.square {
+	background-color: blue;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+/*	transition: 1s;*/
+}
+
+.square:focus {
+	width: 40px;
+	animation: crosser 4s linear;
+	animation-timing-function: linear;
+}
+
+.square:active {
+	background-color: red;
+	animation: spinner 2s infinite linear;
+}
+
+
+
+@keyframes crosser {
+	50% {
+		transform: translate3d(1500px, 0, 0);
+	}
+	100% {
+		transform: translate3d(-500px, 0, 0);
+	}
+}
+
+@keyframes spinner {
+	100% {
+		transform: rotateZ( 360deg );
+	}
+}
+
+

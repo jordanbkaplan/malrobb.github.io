@@ -1,0 +1,93 @@
+table{
+	margin:1em auto;
+	font-size: 150%;
+}
+
+caption::first-letter{
+	font-family: Cursive;
+	color: #FF0000;
+}
+
+caption{
+	font-size: 32px;
+	color: #808080;
+	animation: bkg-changer 3s infinite linear;
+}
+
+th {
+	background: #CCCCCC;
+}
+
+
+
+thead th:first-child { /* selects the first th inside of the thead */
+	border-top-left-radius: 5px;/* we need to apply the rounding to the th because the tr doesn't support this property */
+}
+
+th:hover {
+	border: 3px dotted #3a7999;
+	color: #3a7999;
+	background: rgba(0,0,0,0);
+}
+
+thead th:last-child { /* selects the last th inside of the thead */
+	border-top-right-radius: 5px;
+}
+
+tfoot th:first-child { /* selects the first th inside of the tfoot */
+	border-bottom-left-radius: 5px;
+}
+
+tfoot td:last-child { /* selects the last td inside of the tfoot */
+	border-bottom-right-radius: 5px;
+	background: #FF66FF;
+	font-size: 140%;
+	height: 2em;
+}
+
+tfoot td:last-child:hover {
+	animation: bounce 1s;
+}
+
+tbody tr:nth-child(odd) { /* select the odd-numbered rows */
+	background: #FCFFF5;
+}
+tbody tr:nth-child(even) { /* selects the even-numbered rows */
+	background: #D1DBBD;
+}
+tbody tr:hover { /* changes styles of the row when hovered */
+	background: #3E606F;
+	color: #FFF;
+	font-style: italic;
+}
+
+@keyframes bkg-changer {
+	33% {
+		background: #364f6b;
+	}
+
+	67% {
+		background: #fc5185;
+	}
+
+	100% {
+		background: #3fc1c9;
+	}
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
