@@ -1,11 +1,15 @@
 html {
 	background-color: lightblue;
 }
-#allinfo {
-	text-align: center;
+
+#photos {
+	width: 50%;
+	margin: auto;
 }
-p {
-	display: inline;
+
+.headshot {
+	display: block;
+	margin: auto;
 }
 
 nav {
@@ -21,8 +25,3 @@ a.button {
     padding: 5px;
     color: initial;
 }
-
-#contact {
-	font-size: 22px;
-}
-

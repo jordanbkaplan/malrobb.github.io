@@ -1,12 +1,6 @@
 html {
 	background-color: lightblue;
 }
-#allinfo {
-	text-align: center;
-}
-p {
-	display: inline;
-}
 
 nav {
 	display: inline;
@@ -21,8 +15,3 @@ a.button {
     padding: 5px;
     color: initial;
 }
-
-#contact {
-	font-size: 22px;
-}
-
