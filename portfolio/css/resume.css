@@ -1,22 +1,45 @@
 html {
-	background-color: lightblue;
+	font-family: gill sans;
+	background-color: #708090;
 }
+
+#allinfo {
+	text-align: center;
+}
+
+#resume {
+	color: black;
+}
+
 .res {
-	width: 40%;
-	display: block;
-	margin: auto;
+	justify-content: center;
 }
 
 nav {
 	display: inline;
+	font-size: 30px;
+}
+
+.button {
+	border: 2px solid #4CAF50;
+}
+
+.button:hover {
+	transition-duration: 1s;
+	color: black;
 }
 
 a.button {
-	-webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
+	color: white;
     text-decoration: none;
     padding: 5px;
-    color: initial;
+}
+
+footer {
+	background-color: #708090;
+	color: white;
+}
+
+#footer {
+	text-align: center;
 }
