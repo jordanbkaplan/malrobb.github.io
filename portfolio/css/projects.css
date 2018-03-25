@@ -1,51 +1,135 @@
 html {
 	font-family: gill sans;
-	background-color: #708090;
+	background-color: #74AFAD;
+	background-color: #71899F;
 }
 
 #allinfo {
 	text-align: center;
-}
-
-#projects {
 	color: black;
 }
 
-nav {
-	display: inline;
-	font-size: 30px;
+nav a {
+	position: relative;
+	display: block;
+	color: black;
 }
 
 .button {
-	border: 2px solid #4CAF50;
-}
-
-.button:hover {
-	transition-duration: 1s;
-	color: black;
+	border: 2px solid #000000;
 }
 
 a.button {
-	color: white;
     text-decoration: none;
     padding: 5px;
+    font-size: 20px;
 }
 
 #graphicdesign {
-	color: white;
-	text-align: center;
+	margin: auto;
+	width: 90%;
 }
 
 #productdesign {
-	color: white;
-	text-align: center;
+	margin: auto;
+	width: 90%;
 }
 
-footer {
-	background-color: #708090;
-	color: white;
+h1 {
+	font-size: 20px;
+}
+
+p {
+	font-size: 18px;
+}
+
+#contact {
+	font-size: 25px;
 }
 
 #footer {
 	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        background-color: lightgreen;
+    }
+    nav a {
+		position: relative;
+		display: block;
+	}
+
+    #allinfo {
+		text-align: center;
+		color: black;
+	}
+
+	#home {
+		color: black;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        background-color: #708090;
+    }
+
+    nav a {
+		display: inline;
+	}
+
+    #allinfo {
+		text-align: center;
+		color: #FFFFFF;
+	}
+
+	#home {
+		color: black;
+	}
+
+	p {
+		display: inline;
+	}
+
+	nav {
+		display: inline;
+		font-size: 30px;
+	}
+
+	.button {
+		border: 2px solid #4CAF50;
+	}
+
+	.button:hover {
+		transition-duration: 1s;
+		color: black;
+	}
+
+	a.button {
+		color: white;
+	    text-decoration: none;
+	    padding: 5px;
+	}
+
+	#contact {
+		font-size: 25px;
+	}
+
+	#more {
+		display: flex;
+	    justify-content: space-around;
+	    width: 50%;
+	    margin: auto;
+	}
+
+	footer {
+		background-color: #708090;
+		color: white;
+	}
+
+	#footer {
+		text-align: center;
+	}
+
 }
